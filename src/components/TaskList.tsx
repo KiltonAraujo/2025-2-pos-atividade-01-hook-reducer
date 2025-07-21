@@ -21,7 +21,7 @@ export function TaskList ({tasks,dispatch, onEdit
         <main className="flex flex-col gap-2">
             {tasks.map(task => (
                 <Card key={task.id} className="w-full flex align-start gap-2 justify-center">
-                    <div className='flex align-center gap-2'>
+                    <div className='flex align-center gap-2 pl-6'>
                         <Button className="w-30" onClick={() => onEdit(task)}>Editar</Button>
                         <Dialog>
                             <DialogTrigger className="w-30"><Button className="w-30">Excluir</Button></DialogTrigger>
